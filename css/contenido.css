@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.img-yo{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.img-yo img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: solid 2px white;
+}
+
+.text-inicio{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.text-inicio h3{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 0;
+}
+
+.text-inicio p{
+    color: white;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+
+/* ul html, css etc */
+
+.navbar3 ul{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 15px;
+    
+}
+
+.navbar3 li{
+    list-style: none;
+}
+
+.navbar3 a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
