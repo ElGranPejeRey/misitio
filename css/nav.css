@@ -131,7 +131,8 @@ body {
     align-items: center;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
     transition: left .6s;
-    background-color: white;;
+    background-color: white;
+    z-index: 9999;
 
 }
 
