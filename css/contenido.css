@@ -62,3 +62,25 @@
     font-weight: bold;
 }
 
+
+/* Fondo de partículas */
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* siempre detrás del contenido */
+  background: linear-gradient(120deg, #0f172a, #0b3b66, #5b21b6);
+  background-size: 600% 600%;
+  animation: gradientShift 16s ease infinite;
+}
+
+/* Animación del gradiente */
+@keyframes gradientShift {
+  0% { background-position: 0% 50% }
+  25% { background-position: 50% 50% }
+  50% { background-position: 100% 50% }
+  75% { background-position: 50% 50% }
+  100% { background-position: 0% 50% }
+}
