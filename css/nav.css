@@ -171,3 +171,18 @@ body {
         display: none;
     }
 }
+
+/* underline 2 html, css etc */
+
+.hover-underline2::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: white;
+    display: block;
+    transition: all .6s ease;
+}
+
+.hover-underline2:hover::after {
+    width: 100%;
+}
