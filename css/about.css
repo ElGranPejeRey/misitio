@@ -137,6 +137,8 @@
     }
 }
 
+/* media 720px */
+
 @media (max-width: 720px) {
     .contenedor-about {
         display: grid;
