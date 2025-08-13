@@ -62,3 +62,21 @@
     font-size: 50px;
     font-weight: bold;
 }
+
+/* social */
+
+.lenguajes-iconos{
+    color: dark;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    grid-column: 3/9;
+    grid-row: 9/10;
+    font-size: 30px;
+    list-style: none;
+}
+
+.lenguajes-iconos a{
+    color: #474747;
+}
