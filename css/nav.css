@@ -52,10 +52,11 @@ body {
     font-size: 18px;
     font-weight: bold;
     text-transform: capitalize;
+    transition: all .4s ease;
 }
 
 .navbar a:hover{
-    color: rgb(70, 43, 219);
+    color:dodgerblue;
 }
 
 .hamburguesa {
@@ -97,7 +98,7 @@ body {
     content: "";
     width: 0;
     height: 3px;
-    background-color: rgb(70, 43, 219);
+    background-color: dodgerblue;
     display: block;
     transition: all .6s ease;
 }
@@ -168,7 +169,7 @@ body {
 }
 
 .navbar2 a:hover{
-    color: rgb(70, 43, 219);
+    color:dodgerblue;
 }
 
 .text-menujs {
