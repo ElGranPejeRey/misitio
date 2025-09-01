@@ -1,8 +1,13 @@
-.img-yo{
-    height: 700px;
-    width: 100%;
-    margin-top: 0px;
-    object-fit:cover;
-    border-radius: 0 200px 0 0;
+
+
+.conte-img{
+    padding: 0;
+    height: 600px;
 }
 
+.img-yo{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    margin: 0;
+}
