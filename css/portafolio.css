@@ -1,7 +1,7 @@
 .card-hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
-    z-index: 99999;
+    z-index: 900;
 
 }
 

@@ -143,7 +143,8 @@ body {
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
     transition: left .6s;
     background-color: white;
-    z-index: 9999;
+    z-index: 10000;
+    overflow-y: auto;
 
 }
 
