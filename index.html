@@ -1,147 +1,401 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 
 <head>
-    <title>CodeDesignerWeb - Desarrollo Web</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erick Barrios Arias - Diseñador Web Frontend</title>
 
-    <!-- Bootstrap CSS v5.2.1 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/contenido.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="estilo.css">
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 
-<body class="d-flex flex-column min-vh-100" style="position: fixed; top: 0; width: 100%;">
-    <div id="particles-js"></div>
+<body>
 
-    <div class="contenedor">
-        <!-- logo  -->
-        <div class="logo">
-            <h4>Code<span style="color:dodgerblue">DesignerWeb</span></h4>
-        </div>
-        <!-- hamburguesa -->
-        <div class="hamburguesa" id="hamburguesa">
-            <i class="bi bi-list"></i>
-        </div>
-        <div class="navbar">
-            <ul>
-                <li><a class="link hover-underline" href="index.html">Inicio</a></li>
-                <li><a class="link hover-underline" href="about.html">Sobre mi</a></li>
-                <li><a class="link hover-underline" href="portafolio.html">Portafolio</a></li>
-                <li><a class="link hover-underline" href="contacto.html">contacto</a></li>
-            </ul>
-        </div>
-
-        <div class="social">
-            <ul>
-                <li class="social-link"><a href="https://www.facebook.com/profile.php?id=61579848974548"
-                        target="_blank"><i class="bi bi-facebook "></i></a></li>
-                <li class="social-link"><a href="https://www.instagram.com/codedesignerweb?igsh=azE1MmF4NHQ5d2g3"
-                        target="_blank"><i class="bi bi-instagram "></i></a></li>
-                <li class="social-link"><a href="https://github.com/ElGranPejeRey" target="_blank"><i class="bi bi-github "></i></a>
-                </li>
-                <li class="social-link"><a href="https://www.youtube.com/@elgranpejerey" target="_blank"><i
-                            class="bi bi-youtube "></i></a></li>
-            </ul>
-        </div>
-        <!-- nav2 js -->
-        <div class="navbar2" id="navbar2">
-            <span class="mt-5 text-menujs" style="color:dodgerblue">menú</span>
-            <ul>
-                <li><a class="link hover-underline" href="index.html">Inicio</a></li>
-                <li><a class="link hover-underline" href="about.html">Sobre mi</a></li>
-                <li><a class="link hover-underline" href="portafolio.html">Portafolio</a></li>
-                <li><a class="link hover-underline" href="contacto.html">contacto</a></li>
-            </ul>
-            <div class="social2">
-                <ul>
-                    <li class="social-link"><a href="https://www.facebook.com/profile.php?id=61579848974548"
-                            target="_blank"><i class="bi bi-facebook "></i></a></li>
-                    <li class="social-link"><a href="https://www.instagram.com/codedesignerweb?igsh=azE1MmF4NHQ5d2g3"
-                            target="_blank"><i class="bi bi-instagram "></i></a></li>
-                    <li class="social-link"><a href="https://github.com/ElGranPejeRey" target="_blank"><i class="bi bi-github "></i></a>
-                    </li>
-                    <li class="social-link"><a href="https://www.youtube.com/@elgranpejerey" target="_blank"><i
-                                class="bi bi-youtube "></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <!-- contenido1 -->
-    <div class="container container-bg" id="ap">
-        <div class="row contenido-inicio">
-            <div class="col-12 img-yo">
-                <img src="/img/yo2.jpg" alt="">
-            </div>
-            <div class="col-12 text-inicio">
-                <h3 id="text"></h3>
-                <p class="ms-4">desarrollador web front-end.</p>
-                <nav class="navbar3">
-                    <ul>
-                        <li><a class="link hover-underline2" href="#">Html</a></li>
-                        <li><a class="link hover-underline2" href="#">Css</a></li>
-                        <li><a class="link hover-underline2" href="#">Bootstrap 5</a></li>
-                        <li><a class="link hover-underline2" href="#">JavaScript</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-        </div>
-    </div>
-
-      <!-- Footer -->
-    
-    <!-- footer -->
-    <footer class="bg-dark text-white py-4 mt-auto">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top custom-navbar">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-0">© 2025 CodeDesignerWeb. Todos los derechos reservados.</p>
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-code brand-icon"></i>
+                <span class="brand-text">CodeDesignerWeb</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre Mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+                <button class="btn btn-login ms-3">
+                    <i class="fas fa-user"></i> Login
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6 order-2 order-lg-1">
+                    <div class="hero-content">
+                        <div class="hero-greeting">¡Hola, soy</div>
+                        <h1 class="hero-name">
+                            <span id="typing-name"></span>
+                            <span class="cursor"></span>
+                        </h1>
+                        <p class="hero-title">
+                            <span id="typing-title"></span>
+                            <span class="cursor-title"></span>
+                        </p>
+                        <div class="hero-buttons mt-4">
+                            <a href="#contact" class="btn btn-primary me-3">
+                                <i class="fas fa-envelope"></i> Contáctame
+                            </a>
+                            <a href="#projects" class="btn btn-outline-primary">
+                                <i class="fas fa-folder-open"></i> Ver Proyectos
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <div class="d-flex justify-content-center justify-content-md-end gap-3">
-                        <a href="https://www.youtube.com/@elgranpejerey" target="_blank" class="text-white fs-5">
-                            <i class="fab fa-youtube"></i>
+                <div class="col-lg-6 order-1 order-lg-2">
+                    <div class="hero-image">
+                        <img src="img/yo2.jpg" alt="Erick Barrios Arias" class="img-fluid profile-img">
+                        <div class="hero-decoration"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title text-center mb-5">
+                        <h2>Sobre Mí</h2>
+                        <div class="title-underline"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-4">
+                    <div class="about-image-container">
+                        <img src="img/yo.jpg" alt="About Me" class="img-fluid about-img">
+                        <div class="social-links">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="about-content">
+                        <h3>Diseñador Web Frontend Junior</h3>
+                        <p>Soy un apasionado desarrollador frontend con experiencia en crear experiencias web modernas y
+                            atractivas. Me especializo en HTML5, CSS3, JavaScript y frameworks modernos como React y
+                            Vue.js.</p>
+
+                        <p>Mi enfoque se centra en crear interfaces de usuario intuitivas y responsive que no solo se
+                            vean increíbles, sino que también proporcionen una experiencia excepcional al usuario.</p>
+
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-js-square"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-bootstrap"></i>
+                                <span>Bootstrap 5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title text-center mb-5">
+                        <h2>Mis Proyectos</h2>
+                        <div class="title-underline"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/proyectos/card1.jpg" alt="E-commerce Website" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://inmoviliariasite.netlify.app" target="_blank" class="project-link">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a href="https://github.com/ElGranPejeRey/inmoviliaria.git" target="_blank"
+                                        class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Sitio web Inmobiliaria</h4>
+                            <p>Sitio web de una empresa de inmobiliaria.</p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/proyectos/card2.jpg" alt="Portfolio Website" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://sushibahia.netlify.app" target="_blank" class="project-link">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a href="https://github.com/ElGranPejeRey/sushimirador.git" target="_blank"
+                                        class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Sushi WebSite</h4>
+                            <p>Sitio web de una empresa de venta de sushi.</p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/proyectos/card3.jpg" alt="Task Management App" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://glowing-cascaron-e55e1b.netlify.app" target="_blank"
+                                        class="project-link">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a href="https://github.com/ElGranPejeRey/gatitosafe.git" target="_blank"
+                                        class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Pagina web de rescate felino V Región</h4>
+                            <p>pagina enfocada para el rescate de gatos de la zona central de chile.</p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title text-center mb-5">
+                        <h2>Contáctame</h2>
+                        <div class="title-underline"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="contact-form">
+                        <form id="form">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Asunto</label>
+                                <input type="text" class="form-control" id="subject" name="subject" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button id="button" type="submit" class="btn btn-primary w-100">
+                                <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-map">
+                        <div id="map" style="height: 400px; width: 100%; border-radius: 10px;">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53534.98366562408!2d-71.57154085629683!3d-33.00545012468873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689de84ead41255%3A0x8e5fde76df3d413f!2zVmnDsWEgZGVsIE1hciwgVmFscGFyYcOtc28!5e0!3m2!1ses-419!2scl!4v1758081904069!5m2!1ses-419!2scl"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <div class="contact-info mt-4">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Viña del Mar, Chile</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+56 9 9364 1249</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>codedesignerwe@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <a href="#home" class="navbar-brand">
+                            <i class="fas fa-code brand-icon"></i>
+                            <span class="brand-text text-white">CodeDesignerWeb</span>
                         </a>
-                        <a href="https://github.com/ElGranPejeRey" target="_blank" class="text-white fs-5">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.facebook.com/profile.php?id=61579848974548" target="_blank" class="text-white fs-5">
+                        <p class="footer-desc">Creando experiencias web excepcionales con diseño moderno y funcionalidad
+                            avanzada.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="footer-links">
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#about">Sobre Mí</a></li>
+                        <li><a href="#projects">Proyectos</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Sígueme</h5>
+                    <div class="footer-social">
+                        <a href="#" class="social-link">
                             <i class="fab fa-facebook"></i>
                         </a>
-                        <a href="https://www.instagram.com/codedesignerweb?igsh=azE1MmF4NHQ5d2g3" target="_blank" class="text-white fs-5">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
                             <i class="fab fa-instagram"></i>
                         </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
                     </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p class="copyright">© 2024 CodeDesignerWeb. Todos los derechos reservados.</p>
                 </div>
             </div>
         </div>
     </footer>
 
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.link/1817vy" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
+    <!-- Google Maps API -->
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRFF4o-2Ra2zoDZZXxyxDj9Jae5JyU7iQ&callback=initMap">
+        </script>
 
-    <!-- Bootstrap JavaScript Libraries -->
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
-    <script src="/js/spa.js" defer></script>
-    <script src="/js/particulas.js"></script>
-    <script src="/js/menu.js"></script>
-    <script src="/js/typing.js"></script>
-    <script src="/js/particulas.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        emailjs.init('LsxH559kM99PScrGW')
+    </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>
